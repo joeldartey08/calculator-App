@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator-JADE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="screen">
+        <div id="expression"></div>
+        <div id="result"></div>
+      </section>
+      <section id="input">
+        <button type="button" class="operator" data-action="clear" title="Clear">C</button>
+        <button type="button" class="operator" data-action="back-tip" title="erase">⌫</button>
+        <button type="button" class="operator" data-action="percentage" title="percentage">
+          %
+        </button>
+        <button
+          type="button"
+          class="operator"
+          data-action="operator"
+          data-value="/" title="division"
+        >
+          /
+        </button>
+        <button type="button" data-action="number" data-value="7">7</button>
+        <button type="button" data-action="number" data-value="8">8</button>
+        <button type="button" data-action="number" data-value="9">9</button>
+        <button
+          type="button"
+          class="operator"
+          data-action="operator"
+          data-value="*"
+          title="multiplication"
+        >
+          ×
+        </button>
+        <button type="button" data-action="number" data-value="4">4</button>
+        <button type="button" data-action="number" data-value="5">5</button>
+        <button type="button" data-action="number" data-value="6">6</button>
+        <button
+          type="button"
+          class="operator"
+          data-action="operator"
+          data-value="-" title="subtraction"
+        >
+          -
+        </button>
+        <button type="button" data-action="number" data-value="1">1</button>
+        <button type="button" data-action="number" data-value="2">2</button>
+        <button type="button" data-action="number" data-value="3">3</button>
+        <button
+          type="button"
+          class="operator"
+          data-action="operator"
+          data-value="+" title="addition"
+        >
+          +
+        </button>
+        <button type="button" class="operator layer" data-action="history" title="history">🕒</button>
+        <button type="button" data-action="number" data-value="0">0</button>
+        <button type="button" data-action="dot" data-value="." title="decimal point">.</button>
+        <button type="button" class="operator" data-action="evaluate" title="equal to">=</button>
+      </section>
+    </div>
+    <div id="history"><p id="bin">×</p>
+      <div id="historyText"></div></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
